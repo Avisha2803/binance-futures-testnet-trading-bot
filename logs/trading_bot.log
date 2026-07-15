@@ -1,0 +1,27 @@
+2026-07-15 10:39:41 | INFO     | trading_bot | Placing order | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stopPrice=None
+2026-07-15 10:39:41 | DEBUG    | trading_bot | REQUEST POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1784092181239, 'recvWindow': 5000}
+2026-07-15 10:39:42 | DEBUG    | trading_bot | RESPONSE POST /fapi/v1/order | status=400 body={"code":-2019,"msg":"Margin is insufficient."}
+2026-07-15 10:39:42 | ERROR    | trading_bot | API ERROR POST /fapi/v1/order | code=-2019 msg=Margin is insufficient.
+2026-07-15 10:39:42 | ERROR    | trading_bot | Order REJECTED by API: Binance API error (code=-2019): Margin is insufficient.
+2026-07-15 10:40:00 | INFO     | trading_bot | Placing order | symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=65000.0 stopPrice=None
+2026-07-15 10:40:00 | DEBUG    | trading_bot | REQUEST POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 65000.0, 'timeInForce': 'GTC', 'timestamp': 1784092200860, 'recvWindow': 5000}
+2026-07-15 10:40:01 | DEBUG    | trading_bot | RESPONSE POST /fapi/v1/order | status=400 body={"code":-2019,"msg":"Margin is insufficient."}
+2026-07-15 10:40:01 | ERROR    | trading_bot | API ERROR POST /fapi/v1/order | code=-2019 msg=Margin is insufficient.
+2026-07-15 10:40:01 | ERROR    | trading_bot | Order REJECTED by API: Binance API error (code=-2019): Margin is insufficient.
+2026-07-15 10:54:02 | INFO     | trading_bot | Placing order | symbol=ETHUSDT side=BUY type=MARKET qty=0.01 price=None stopPrice=None
+2026-07-15 10:54:02 | DEBUG    | trading_bot | REQUEST POST /fapi/v1/order | params={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1784093042008, 'recvWindow': 5000}
+2026-07-15 10:54:02 | DEBUG    | trading_bot | RESPONSE POST /fapi/v1/order | status=400 body={"code":-4164,"msg":"Order's notional must be no smaller than 20 (unless you choose reduce only)."}
+2026-07-15 10:54:02 | ERROR    | trading_bot | API ERROR POST /fapi/v1/order | code=-4164 msg=Order's notional must be no smaller than 20 (unless you choose reduce only).
+2026-07-15 10:54:02 | ERROR    | trading_bot | Order REJECTED by API: Binance API error (code=-4164): Order's notional must be no smaller than 20 (unless you choose reduce only).
+2026-07-15 10:55:41 | INFO     | trading_bot | Placing order | symbol=ETHUSDT side=BUY type=MARKET qty=0.02 price=None stopPrice=None
+2026-07-15 10:55:41 | DEBUG    | trading_bot | REQUEST POST /fapi/v1/order | params={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.02, 'timestamp': 1784093141526, 'recvWindow': 5000}
+2026-07-15 10:55:42 | DEBUG    | trading_bot | RESPONSE POST /fapi/v1/order | status=200 body={"orderId":13372588832,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"0wnhmQO3nyAY2KdzgOACVi","price":"0.00","origQty":"0.020","executedQty":"0.000","cumQty":"0.000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1784093143279}
+2026-07-15 10:55:42 | INFO     | trading_bot | Order ACCEPTED | orderId=13372588832 status=NEW
+2026-07-15 10:58:05 | INFO     | trading_bot | Placing order | symbol=ETHUSDT side=SELL type=LIMIT qty=0.02 price=2000.0 stopPrice=None
+2026-07-15 10:58:05 | DEBUG    | trading_bot | REQUEST POST /fapi/v1/order | params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.02, 'price': 2000.0, 'timeInForce': 'GTC', 'timestamp': 1784093285237, 'recvWindow': 5000}
+2026-07-15 10:58:06 | DEBUG    | trading_bot | RESPONSE POST /fapi/v1/order | status=200 body={"orderId":13372793823,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"uM35XsoaAiXv8GqfR3ZLFy","price":"2000.00","origQty":"0.020","executedQty":"0.000","cumQty":"0.000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1784093286956}
+2026-07-15 10:58:06 | INFO     | trading_bot | Order ACCEPTED | orderId=13372793823 status=NEW
+2026-07-15 10:58:15 | INFO     | trading_bot | Placing order | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stopPrice=None
+2026-07-15 10:58:15 | DEBUG    | trading_bot | REQUEST POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1784093295161, 'recvWindow': 5000}
+2026-07-15 10:58:16 | DEBUG    | trading_bot | RESPONSE POST /fapi/v1/order | status=200 body={"orderId":21832872939,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"klm28vOgVWN1BWYIm3AJZA","price":"0.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1784093296960}
+2026-07-15 10:58:16 | INFO     | trading_bot | Order ACCEPTED | orderId=21832872939 status=NEW
