@@ -1,0 +1,6 @@
+2026-07-14 14:46:17 | INFO     | trading_bot | === DEMO: simulated MARKET order (mocked HTTP response) ===
+2026-07-14 14:46:17 | INFO     | trading_bot | Placing order | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stopPrice=None
+2026-07-14 14:46:17 | INFO     | trading_bot | Order ACCEPTED | orderId=3141592653 status=FILLED
+2026-07-14 14:46:17 | INFO     | trading_bot | === DEMO: simulated LIMIT order (mocked HTTP response) ===
+2026-07-14 14:46:17 | INFO     | trading_bot | Placing order | symbol=ETHUSDT side=SELL type=LIMIT qty=0.5 price=3200.0 stopPrice=None
+2026-07-14 14:46:17 | INFO     | trading_bot | Order ACCEPTED | orderId=3141592654 status=NEW

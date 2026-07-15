@@ -1,0 +1,2 @@
+Log files are written here at runtime (trading_bot.log). This file just keeps
+the empty directory tracked in git.
